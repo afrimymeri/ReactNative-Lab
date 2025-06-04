@@ -24,6 +24,15 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "b83409b8-161b-4803-a8c1-31a5cd4d5544"
+      }
+    },
+    "owner": "afrimymeri",
+    "plugins": [
+      "expo-sqlite"
+    ]
   }
 }

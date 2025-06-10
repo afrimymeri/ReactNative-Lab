@@ -1,4 +1,4 @@
-import { createContext } from 'react';
+import {createContext, useReducer} from 'react';
 
 const DUMMY_EXPENSES = [
   {
@@ -86,7 +86,7 @@ function expensesReducer(state, action) {
     }
 }
 
-function ExpensesContextProvider ({children}) {
+ export function ExpensesContextProvider ({children}) {
     const [expensesState, dispatch] = useReducer(expensesReducer, DUMMY_EXPENSES);
 
     function addExpense(expenseData) {

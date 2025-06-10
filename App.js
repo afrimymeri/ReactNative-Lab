@@ -12,10 +12,11 @@ import SignUpScreen from './components/screens/SignUpScreen';
 
 import IconButton from './components/ui/IconButton';
 import { GlobalStyles } from './constants/styles';
-import AllExpenses from './screens/AllExpenses';
-import ManageExpense from './screens/ManageExpense';
-import RecentExpenses from './screens/RecentExpenses';
-import ExpensesContextProvider from './store/expenses-context';
+import AllExpenses from './components/screens/AllExpenses';
+import ManageExpense from './components/screens/ManageExpenses';
+import RecentExpenses from './components/screens/RecentExpenses';
+import { ExpensesContextProvider }  from './store/expenses-context';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 const Stack = createNativeStackNavigator();
 const BottomTabs = createBottomTabNavigator();
